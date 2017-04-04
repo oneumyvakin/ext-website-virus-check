@@ -633,4 +633,37 @@ class Modules_WebsiteVirusCheck_Helper
     static function setDomainReport($domainId, $report) {
         pm_Settings::set('domain_id_' . $domainId, json_encode($report));
     }
+
+    /**
+     * @param array $args
+     * @param array $env
+     * @return array|mixed
+     */
+    public static function executeScanner($args = [], $env = [])
+    {
+        $binary = 'website-virus-check.386';
+
+        if (PHP_OS == 'WINNT') {
+            $binary = 'website-virus-check.exe';
+        }
+
+        pm_Log::debug(print_r($env, true));
+        $result = pm_ApiCli::callSbin($binary, $args, pm_ApiCli::RESULT_FULL, $env);
+        pm_Log::debug('Execution result : ' . print_r($result, true));
+
+        $response = $result['stdout'];
+        if ($result['code'] <> 0) {
+            $response = $result['stderr'];
+        }
+
+        $jsonResult = json_decode($response, true);
+        if (!empty($response) && $jsonResult === null) {
+            return [
+                'is_error' => true,
+                'message' => $result['stdout'] . "\n" . $result['stderr'] . "\n" . 'Exit code: ' . $result['code'],
+            ];
+        }
+
+        return $jsonResult;
+    }
 }
