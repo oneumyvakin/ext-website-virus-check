@@ -93,4 +93,19 @@ class Modules_WebsiteVirusCheck_PleskDomain
     public function getAvailable() {
         return pm_Locale::lmsg($this->available);
     }
+
+    /**
+     * @return string
+     */
+    public function getDocumentRoot() {
+        $documentRoot = '';
+        try {
+            $documentRoot = pm_Domain::getByDomainId($this->id)->getDocumentRoot();
+        } catch (Exception $e) {
+            pm_Log::debug(print_r($this, 1) . ' : ' . $e->getMessage());
+        }
+        return $documentRoot;
+    }
+
+
 }
