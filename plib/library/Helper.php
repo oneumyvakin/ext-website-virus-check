@@ -659,11 +659,30 @@ class Modules_WebsiteVirusCheck_Helper
         $jsonResult = json_decode($response, true);
         if (!empty($response) && $jsonResult === null) {
             return [
-                'is_error' => true,
-                'message' => $result['stdout'] . "\n" . $result['stderr'] . "\n" . 'Exit code: ' . $result['code'],
+                'Err' => [
+                    'IsError' => true,
+                    'LocaleKey' => 'scannerErrorExecution',
+                    'LocaleArgs' => [
+                        'code' => $result['code'],
+                        'stdout' => $result['stdout'],
+                        'stderr' => $result['stderr'],
+                    ],
+                ],
+                'Domains' => [],
             ];
         }
 
         return $jsonResult;
     }
+
+    public static function getScannerReport()
+    {
+        pm_Settings::clean('scannerError');
+        $report = self::executeScanner("-report");
+        if ($report['Err']['IsError']) {
+            pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
+        }
+        return $report;
+    }
+
 }
