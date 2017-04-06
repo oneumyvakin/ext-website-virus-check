@@ -45,6 +45,8 @@ class Modules_WebsiteVirusCheck_Helper
         if (count($domains) == 0) {
             $domains = self::getDomains();
         }
+
+        self::scanDomains($domains);
         foreach ($domains as $domain) {
             $i++;
 
@@ -412,6 +414,7 @@ class Modules_WebsiteVirusCheck_Helper
         if ($domains['total'] > 0) {
             return $domains;
         }
+
         foreach (self::getDomains() as $domain) {
             $report = self::getDomainReport($domain->id);
             $domain->no_scanning_results = pm_Locale::lmsg('scanningWasNotPerformedYetForList');
@@ -678,11 +681,35 @@ class Modules_WebsiteVirusCheck_Helper
     public static function getScannerReport()
     {
         pm_Settings::clean('scannerError');
-        $report = self::executeScanner("-report");
+        $report = self::executeScanner(["-report"]);
         if ($report['Err']['IsError']) {
             pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
         }
         return $report;
     }
 
+    public static function scanDomains($domains)
+    {
+        pm_Settings::clean('scannerError');
+        $domainsPath = pm_Context::getVarDir() . "/domains.json";
+        $encodeResult = file_put_contents($domainsPath, json_encode($domains));
+        if ($encodeResult === false) {
+            pm_Settings::set('scannerError', pm_Locale::lmsg('scannerErrorEncodeDomainsJson', ['path' => $domainsPath]));
+            return [
+                'Err' => [
+                    'IsError' => true,
+                    'LocaleKey' => 'scannerErrorEncodeDomainsJson',
+                    'LocaleArgs' => [
+                        'path' => $domainsPath,
+                    ],
+                ],
+                'Domains' => [],
+            ];
+        }
+        $report = self::executeScanner(["-domains", $domainsPath]);
+        if ($report['Err']['IsError']) {
+            pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
+        }
+        return $report;
+    }
 }
