@@ -206,15 +206,16 @@ class IndexController extends pm_Controller_Action
         $report = Modules_WebsiteVirusCheck_Helper::getDomainsReport();
         foreach ($report['all'] as $domain) {
             $colScanDate = isset($domain->virustotal_scan_date) ? $domain->virustotal_scan_date : '';
-            $colScanResult = pm_Locale::lmsg('domainInactiveOrCantbeResolvedInHostingIp');
+            $colVulnerabilities = pm_Locale::lmsg('domainVulnerabilitiesNotFound');
+            $colVirusTotalResult = pm_Locale::lmsg('domainInactiveOrCantbeResolvedInHostingIp');
             $colBadUrlsAndSamples = $domain->virustotal_bad_urls_and_samples;
             $colReportLink = '';
             $isDomainAvailable = $domain->isAvailable();
             if ($isDomainAvailable) {
                 if (isset($domain->no_scanning_results)) {
-                    $colScanResult = $domain->no_scanning_results;
+                    $colVirusTotalResult = $domain->no_scanning_results;
                 } else {
-                    $colScanResult = $domain->virustotal_positives . ' / ' . $domain->virustotal_total;
+                    $colVirusTotalResult = $domain->virustotal_positives . ' / ' . $domain->virustotal_total;
                     $colReportLink = '<a rel="noopener noreferrer" target="_blank" href="' . $domain->virustotal_domain_info_url . '">' . $this->lmsg('virustotalReport') . '</a>';
                 }
             }
@@ -233,6 +234,9 @@ class IndexController extends pm_Controller_Action
                 $stateImgSrc = pm_Context::getBaseUrl() . '/images/disabled.png';
                 $stateImgAlt = $this->lmsg('scanningDisabled');
             }
+            if ($domain->vulnerabilities) {
+                $colVulnerabilities = $domain->vulnerabilities;
+            }
 
             $colScanningState = '<img src="' . $stateImgSrc . '" title="' . htmlspecialchars($stateImgAlt, ENT_QUOTES) . '">';
             $colDomain = '<a target="_blank" href="/admin/subscription/login/id/' . $domain->webspace_id . '?pageUrl=/web/overview/id/d:' . $domain->id . '">' . $domain->name . '</a>';
@@ -240,9 +244,10 @@ class IndexController extends pm_Controller_Action
                 'column-1' => $colScanningState,
                 'column-2' => $colDomain,
                 'column-3' => $colScanDate,
-                'column-4' => $colScanResult,
-                'column-5' => $colBadUrlsAndSamples,
-                'column-6' => $colReportLink,
+                'column-4' => $colVulnerabilities,
+                'column-5' => $colVirusTotalResult,
+                'column-6' => $colBadUrlsAndSamples,
+                'column-7' => $colReportLink,
             ];
         }
         
@@ -275,14 +280,18 @@ class IndexController extends pm_Controller_Action
                 'sortable' => true,
             ],
             'column-4' => [
-                'title' => $this->lmsg('checkResult'),
+                'title' => $this->lmsg('vulnerabilities'),
                 'sortable' => true,
             ],
             'column-5' => [
-                'title' => $this->lmsg('badUrlsAndSamples'),
+                'title' => $this->lmsg('checkResult'),
                 'sortable' => true,
             ],
             'column-6' => [
+                'title' => $this->lmsg('badUrlsAndSamples'),
+                'sortable' => true,
+            ],
+            'column-7' => [
                 'title' => $this->lmsg('reportLink'),
                 'noEscape' => true,
                 'searchable' => false,

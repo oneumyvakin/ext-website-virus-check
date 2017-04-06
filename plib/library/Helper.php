@@ -415,6 +415,7 @@ class Modules_WebsiteVirusCheck_Helper
             return $domains;
         }
 
+        $scanReports = self::getScannerReport();
         foreach (self::getDomains() as $domain) {
             $report = self::getDomainReport($domain->id);
             $domain->no_scanning_results = pm_Locale::lmsg('scanningWasNotPerformedYetForList');
@@ -442,7 +443,7 @@ class Modules_WebsiteVirusCheck_Helper
                     $domain->no_scanning_results = pm_Locale::lmsg('httpError', array('message' => $report['http_error']));
                 }
             }
-                        
+
             if (isset($report['virustotal_response_code']) && $report['virustotal_response_code'] > 0) {
                 unset($domain->no_scanning_results);
                 $domain->virustotal_scan_date = $report['virustotal_scan_date'];
@@ -453,6 +454,10 @@ class Modules_WebsiteVirusCheck_Helper
                 $detectedReferrerSamples = isset($report['detected_referrer_samples']) ? $report['detected_referrer_samples'] : 0;
                 $domain->virustotal_bad_urls_and_samples = $detectedUrls + $detectedCommunicatingSamples + $detectedReferrerSamples;
                 $domain->virustotal_domain_info_url = sprintf(self::virustotal_domain_info_url, $domain->ascii_name);
+            }
+
+            if (isset($scanReports['Domains'][$domain->id])) {
+                $domain->vulnerabilities = $scanReports['Domains'][$domain->id]['vulnerabilities'];
             }
 
             $domains['all'][$domain->id] = $domain;
@@ -706,7 +711,7 @@ class Modules_WebsiteVirusCheck_Helper
                 'Domains' => [],
             ];
         }
-        $report = self::executeScanner(["-domains", $domainsPath]);
+        $report = self::executeScanner(["-scan-domains", $domainsPath]);
         if ($report['Err']['IsError']) {
             pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
         }
