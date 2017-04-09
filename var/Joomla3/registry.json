@@ -1,0 +1,7 @@
+{
+    "DbName": "Joomla, Joomla Plugins and third-party libraries",
+    "DbVersion": 1,
+    "Parts": [
+        "dbJoomla3Plugins.json"
+    ]
+}

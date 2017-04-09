@@ -1,0 +1,8 @@
+{
+    "DbName": "WordPress, WordPress Plugins and third-party libraries",
+    "DbVersion": 1,
+    "Parts": [
+        "201703.json",
+        "201704.json"
+    ]
+}

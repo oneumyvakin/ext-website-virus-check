@@ -1,0 +1,15 @@
+{
+    "Vulnerabilities": [
+        {
+            "Title": "High Priority - Plugin Spider Event Calendar 1.5.51 - SQL Injection",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491696000",
+            "AdvisoryURL": "http://seclists.org/fulldisclosure/2017/Apr/43",
+            "PluginName": "Spider Event Calendar",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.5.51",
+            "DetectByPathExists": false,
+            "Path": "wp-content/plugins/spider-event-calendar/calendar.php"
+        }
+    ]
+}

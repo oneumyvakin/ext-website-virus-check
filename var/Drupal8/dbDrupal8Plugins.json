@@ -1,0 +1,124 @@
+{
+    "Vulnerabilities": [
+        {
+            "Title": "Moderately Critical - Linkit Hours 4.2 - Access Bypass - DRUPAL-SA-CONTRIB-2017-033",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1490140800",
+            "AdvisoryURL": "https://www.drupal.org/node/2862986",
+            "PluginName": "Linkit",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "4.2",
+            "Path": "modules/linkit/linkit.info.yml"
+        },
+        {
+            "Title": "Drupal Core - Multiple Vulnerabilities - SA-CORE-2017-001",
+            "CVE": "CVE-2017-6377",
+            "AdvisoryDate": "1489622400",
+            "AdvisoryURL": "https://www.drupal.org/SA-2017-001",
+            "PluginName": "Core",
+            "VersionFrom": "8.0.0",
+            "VersionTo": "8.2.7",
+            "Path": "core/modules/system/system.info.yml"
+        },
+        {
+            "Title": "Drupal up to 7.51/8.2.2 Taxonomy Module information disclosure",
+            "CVE": "CVE-2016-9449",
+            "AdvisoryDate": "1479513600",
+            "AdvisoryURL": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-9449",
+            "PluginName": "Taxonomy",
+            "VersionFrom": "8.0.0",
+            "VersionTo": "8.2.2",
+            "Path": "core/modules/taxonomy/taxonomy.info.yml"
+        },
+        {
+            "Title": "Drupal Core - Highly Critical - Injection - SA-CORE-2016-003",
+            "CVE": "CVE-2016-5385",
+            "AdvisoryDate": "1468774800",
+            "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-003",
+            "PluginName": "Core",
+            "VersionFrom": "8.0.0",
+            "VersionTo": "8.1.6",
+            "Path": "core/modules/system/system.info.yml"
+        },
+        {
+            "Title": "Drupal Core - Critical - Multiple Vulnerabilities - SA-CORE-2016-001",
+            "CVE": "CVE-2016-3162",
+            "AdvisoryDate": "1456272000",
+            "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-001",
+            "PluginName": "Core",
+            "VersionFrom": "8.0.0",
+            "VersionTo": "8.0.3",
+            "Path": "core/modules/system/system.info.yml"
+        },
+        {
+            "Title": "AES - Critical - Unsupported - SA-CONTRIB-2017-027",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1488326400",
+            "AdvisoryURL": "https://www.drupal.org/node/2857021",
+            "PluginName": "AES",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "99.0.0",
+            "Path": "modules/aes/aes.info.yml"
+        },
+        {
+            "Title": "Hotjar - Moderately Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-015",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1487116800",
+            "AdvisoryURL": "https://www.drupal.org/node/2852916",
+            "PluginName": "Hotjar",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "0.9",
+            "Path": "modules/hotjar/hotjar.info.yml"
+        },
+        {
+            "Title": "Acquia Content Hub - Moderately Critical - Access Bypass - SA-CONTRIB-2017-013",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1486512000",
+            "AdvisoryURL": "https://www.drupal.org/node/2850909",
+            "PluginName": "Acquia Content Hub",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.3",
+            "Path": "modules/acquia_contenthub/acquia_contenthub.info.yml"
+        },
+        {
+            "Title": "PRLP - Critical - Access Bypass and Privilege Escalation - SA-CONTRIB-2017-030",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1488931200",
+            "AdvisoryURL": "https://www.drupal.org/node/2858880",
+            "PluginName": "Password Reset Landing Page (PRLP)",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.2",
+            "Path": "modules/prlp/prlp.info.yml"
+        },
+        {
+            "Title": "Permissions by Term -- Critical - Multiple vulnerabilities - SA-CONTRIB-2017-001",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1485302400",
+            "AdvisoryURL": "https://www.drupal.org/node/2841094",
+            "PluginName": "Permissions by Term",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.10.0",
+            "Path": "modules/permissions_by_term/permissions_by_term.info.yml"
+        },
+        {
+            "Title": "Drupal Core - Moderately Critical - Multiple Vulnerabilities - SA-CORE-2016-005",
+            "CVE": "CVE-2016-9452",
+            "AdvisoryDate": "1479254400",
+            "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-005",
+            "PluginName": "Core",
+            "VersionFrom": "8.0.0",
+            "VersionTo": "8.2.2",
+            "Path": "core/modules/system/system.info.yml"
+        },
+        {
+            "Title": "Drupal Core - Critical - Multiple Vulnerabilities - SA-CORE-2016-004",
+            "CVE": "CVE-2016-7572",
+            "AdvisoryDate": "1474416000",
+            "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-004",
+            "PluginName": "Core",
+            "VersionFrom": "8.0.0",
+            "VersionTo": "8.1.9",
+            "Path": "core/modules/system/system.info.yml"
+        }
+    ]
+}

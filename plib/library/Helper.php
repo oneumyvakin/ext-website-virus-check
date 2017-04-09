@@ -696,7 +696,8 @@ class Modules_WebsiteVirusCheck_Helper
     public static function scanDomains($domains)
     {
         pm_Settings::clean('scannerError');
-        $domainsPath = pm_Context::getVarDir() . "/domains.json";
+        $dbRootPath = pm_Context::getVarDir();
+        $domainsPath = pm_Context::getVarDir() . '/domains.json';
         $encodeResult = file_put_contents($domainsPath, json_encode($domains));
         if ($encodeResult === false) {
             pm_Settings::set('scannerError', pm_Locale::lmsg('scannerErrorEncodeDomainsJson', ['path' => $domainsPath]));
@@ -711,7 +712,7 @@ class Modules_WebsiteVirusCheck_Helper
                 'Domains' => [],
             ];
         }
-        $report = self::executeScanner(["-scan-domains", $domainsPath]);
+        $report = self::executeScanner(['-scan-domains', $domainsPath, '-db-root-path', $dbRootPath]);
         if ($report['Err']['IsError']) {
             pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
         }
