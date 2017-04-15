@@ -226,7 +226,7 @@ class IndexController extends pm_Controller_Action
             } else if ($domain->enabled) {
                 $stateImgSrc = pm_Context::getBaseUrl() . '/images/enabled.png';
                 $stateImgAlt = $this->lmsg('scanningEnabled');  
-                if ((int)$domain->virustotal_positives > 0 || $domain->virustotal_bad_urls_and_samples > 0) {
+                if ((int)$domain->virustotal_positives > 0 || $domain->virustotal_bad_urls_and_samples > 0 || $domain->vulnerabilities) {
                     $stateImgSrc = pm_Context::getBaseUrl() . '/images/bad.png';
                     $stateImgAlt = $this->lmsg('badReport');
                 }
@@ -235,7 +235,8 @@ class IndexController extends pm_Controller_Action
                 $stateImgAlt = $this->lmsg('scanningDisabled');
             }
             if ($domain->vulnerabilities) {
-                $colVulnerabilities = $domain->vulnerabilities;
+                $vulnActionUrl = pm_Context::getActionUrl('index', 'vulnerability') . '?domainId=' . $domain->id;
+                $colVulnerabilities = "<a href='$vulnActionUrl'>" . pm_Locale::lmsg('domainVulnerabilitiesFound') . "</a>";
             }
 
             $colScanningState = '<img src="' . $stateImgSrc . '" title="' . htmlspecialchars($stateImgAlt, ENT_QUOTES) . '">';
@@ -281,7 +282,8 @@ class IndexController extends pm_Controller_Action
             ],
             'column-4' => [
                 'title' => $this->lmsg('vulnerabilities'),
-                'sortable' => true,
+                'noEscape' => true,
+                'sortable' => false,
             ],
             'column-5' => [
                 'title' => $this->lmsg('checkResult'),
@@ -363,5 +365,15 @@ class IndexController extends pm_Controller_Action
         }
         $messages[] = ['status' => 'info', 'content' => $this->lmsg('buttonDisableSuccess')];
         $this->_helper->json(['status' => 'success', 'statusMessages' => $messages]);
+    }
+
+    public function vulnerabilityAction()
+    {
+        $report = Modules_WebsiteVirusCheck_Helper::getDomainsReport();
+        $domainId = (int)$this->_getParam('domainId');
+
+        if (isset($report['all'][$domainId])) {
+            $this->view->vulnerabilities = $report['all'][$domainId]->vulnerabilities;
+        }
     }
 }
