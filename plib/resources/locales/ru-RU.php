@@ -73,4 +73,5 @@ $messages = array(
     'emailNotificationEnabled' => 'Включить почтовые оповещения',
     'emailNotificationSubjectBadDomain' => 'От VirusTotal.com получен "плохой" отчет для домена %%domain%%',
     'emailNotificationBodyBadDomain' => '"Плохой" отчет VirusTotal.com для домена %%domain%% %%url%%',
+    'emailNotificationBodyVulnerabilities' => 'Сканнер уязвимостей нашел уязвимости на домене %%domain%%. Пожалуйста, посмотрите отчет по ссылке %%url%%',
 );

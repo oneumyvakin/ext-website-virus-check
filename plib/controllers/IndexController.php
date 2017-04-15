@@ -48,6 +48,11 @@ class IndexController extends pm_Controller_Action
         if (pm_Settings::get('apiKeyBecameInvalid') && !$this->_status->hasMessage($this->lmsg('apiKeyBecameInvalid'))) {
             $this->_status->addError($this->lmsg('apiKeyBecameInvalid'));
         }
+
+        $scannerError = pm_Settings::get('scannerError');
+        if ($scannerError && !$this->_status->hasMessage($scannerError)) {
+            $this->_status->addError($scannerError);
+        }
         
         $this->view->list = $this->_getDomainsReportList();
         $this->view->scan = [];

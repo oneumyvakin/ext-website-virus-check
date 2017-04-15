@@ -39,14 +39,21 @@ class Modules_WebsiteVirusCheck_Helper
         }
 
         pm_Settings::set('last_scan', date('d/M/Y G:i')); // Has dependency with scan_lock
-        
-        self::report($domains);
-        $i = 1;
+
         if (count($domains) == 0) {
             $domains = self::getDomains();
         }
 
-        self::scanDomains($domains);
+        $scanReport = self::scanDomains($domains);
+        if (isset($scanReport['Domains'])) {
+            foreach ($scanReport['Domains'] as $domainId => $domainReport) {
+                $domains[$domainId]->vulnerabilities = $domainReport['vulnerabilities'];
+            }
+        }
+
+        self::report($domains);
+
+        $i = 1;
         foreach ($domains as $domain) {
             $i++;
 
@@ -265,7 +272,8 @@ class Modules_WebsiteVirusCheck_Helper
         if ((int)$report['virustotal_positives'] > 0
             || $report['detected_urls'] > 0
             || $report['detected_communicating_samples'] > 0
-            || $report['detected_referrer_samples'] > 0) {
+            || $report['detected_referrer_samples'] > 0
+            || count($domain->vulnerabilities) > 0) {
             self::sendNotification($domain);
         }
 
@@ -606,16 +614,25 @@ class Modules_WebsiteVirusCheck_Helper
         $adminEmail = $admin->getProperty('email');
         $cnameEmail = $admin->getProperty('cname');
 
-        $mail = new Zend_Mail();
-        $mail->setBodyText(
-            pm_Locale::lmsg(
-                'emailNotificationBodyBadDomain',
+        $bodyText = pm_Locale::lmsg(
+            'emailNotificationBodyBadDomain',
+            [
+                'domain' => $domain->ascii_name,
+                'url' => sprintf(self::virustotal_domain_info_url, $domain->ascii_name)
+            ]
+        );
+        if (count($domain->vulnerabilities) > 0) {
+            $bodyText = $bodyText . "\n" . pm_Locale::lmsg(
+                'emailNotificationBodyVulnerabilities',
                 [
                     'domain' => $domain->ascii_name,
-                    'url' => sprintf(self::virustotal_domain_info_url, $domain->ascii_name)
+                    'url' => pm_Context::getActionUrl('index', 'vulnerability') . '?domainId=' . $domain->id
                 ]
-            )
-        );
+            );
+        }
+
+        $mail = new Zend_Mail();
+        $mail->setBodyText($bodyText);
         $mail->setFrom($adminEmail, $cnameEmail);
         $mail->addTo($adminEmail, $cnameEmail);
         $mail->setSubject(pm_Locale::lmsg('emailNotificationSubjectBadDomain', ['domain' => $domain->ascii_name]));
