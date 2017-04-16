@@ -40,6 +40,7 @@ $messages = array(
     'vulnerabilityCve' => 'CVE',
     'vulnerabilityAdvisoryDate' => 'Advisory Date',
     'vulnerabilityAdvisoryUrl' => 'Advisory URL',
+    'vulnerabilitySoftwareType' => 'Software Type',
     'vulnerabilitySoftwareName' => 'Software Name',
     'vulnerabilitySoftwareVersion' => 'Software Version',
     'vulnerabilityPath' => 'Path',
