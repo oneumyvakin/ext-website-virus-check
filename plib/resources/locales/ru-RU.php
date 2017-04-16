@@ -48,6 +48,8 @@ $messages = array(
     'vulnerabilityErrorSubmitIssue' => 'Пожалуйста, создайте issue в репозитории расширения на <a rel="noopener noreferrer" target="_blank" href="https://github.com/plesk/ext-website-virus-check">GitHub</a>',
 
     'scannerErrorEncodeDomainsJson' => 'Сканнер уязвимостей не смог закодировать JSON в файл %%path%%',
+    'scannerErrorDomainError' => 'При проверке этого домена сканером уязвимостей произошла ошибка',
+    'scannerErrorFailedWebAppCheck' => 'Проверка веб-приложения завершилась с ошибкой: %%msg%%',
     'scannerErrorSearchVersion' => 'Сканнер уязвимостей не смог найти версию программного обеспечения: %%msg%%',
 
     'yes' => 'Да',

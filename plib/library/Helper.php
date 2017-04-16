@@ -47,7 +47,7 @@ class Modules_WebsiteVirusCheck_Helper
         $scanReport = self::scanDomains($domains);
         if (isset($scanReport['Domains'])) {
             foreach ($scanReport['Domains'] as $domainId => $domainReport) {
-                $domains[$domainId]->vulnerabilities = $domainReport['vulnerabilities'];
+                $domains[$domainId]->vulnerabilitiesReport = $domainReport;
             }
         }
 
@@ -273,7 +273,7 @@ class Modules_WebsiteVirusCheck_Helper
             || $report['detected_urls'] > 0
             || $report['detected_communicating_samples'] > 0
             || $report['detected_referrer_samples'] > 0
-            || count($domain->vulnerabilities) > 0) {
+            || count($domain->vulnerabilitiesReport['vulnerabilities']) > 0) {
             self::sendNotification($domain);
         }
 
@@ -465,7 +465,7 @@ class Modules_WebsiteVirusCheck_Helper
             }
 
             if (isset($scanReports['Domains'][$domain->id])) {
-                $domain->vulnerabilities = $scanReports['Domains'][$domain->id]['vulnerabilities'];
+                $domain->vulnerabilitiesReport = $scanReports['Domains'][$domain->id];
             }
 
             $domains['all'][$domain->id] = $domain;
@@ -621,7 +621,7 @@ class Modules_WebsiteVirusCheck_Helper
                 'url' => sprintf(self::virustotal_domain_info_url, $domain->ascii_name)
             ]
         );
-        if (count($domain->vulnerabilities) > 0) {
+        if (count($domain->vulnerabilitiesReport['vulnerabilities']) > 0) {
             $bodyText = $bodyText . "\n" . pm_Locale::lmsg(
                 'emailNotificationBodyVulnerabilities',
                 [
@@ -684,7 +684,7 @@ class Modules_WebsiteVirusCheck_Helper
         $jsonResult = json_decode($response, true);
         if (!empty($response) && $jsonResult === null) {
             return [
-                'Err' => [
+                'Error' => [
                     'IsError' => true,
                     'LocaleKey' => 'scannerErrorExecution',
                     'LocaleArgs' => [
@@ -704,8 +704,8 @@ class Modules_WebsiteVirusCheck_Helper
     {
         pm_Settings::clean('scannerError');
         $report = self::executeScanner(["-report"]);
-        if ($report['Err']['IsError']) {
-            pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
+        if ($report['Error']['IsError']) {
+            pm_Settings::set('scannerError', pm_Locale::lmsg($report['Error']['LocaleKey'], $report['Err']['LocaleArgs']));
         }
         return $report;
     }
@@ -719,7 +719,7 @@ class Modules_WebsiteVirusCheck_Helper
         if ($encodeResult === false) {
             pm_Settings::set('scannerError', pm_Locale::lmsg('scannerErrorEncodeDomainsJson', ['path' => $domainsPath]));
             return [
-                'Err' => [
+                'Error' => [
                     'IsError' => true,
                     'LocaleKey' => 'scannerErrorEncodeDomainsJson',
                     'LocaleArgs' => [
@@ -730,8 +730,8 @@ class Modules_WebsiteVirusCheck_Helper
             ];
         }
         $report = self::executeScanner(['-scan-domains', $domainsPath, '-db-root-path', $dbRootPath]);
-        if ($report['Err']['IsError']) {
-            pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
+        if ($report['Error']['IsError']) {
+            pm_Settings::set('scannerError', pm_Locale::lmsg($report['Error']['LocaleKey'], $report['Err']['LocaleArgs']));
         }
         return $report;
     }

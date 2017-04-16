@@ -231,7 +231,7 @@ class IndexController extends pm_Controller_Action
             } else if ($domain->enabled) {
                 $stateImgSrc = pm_Context::getBaseUrl() . '/images/enabled.png';
                 $stateImgAlt = $this->lmsg('scanningEnabled');  
-                if ((int)$domain->virustotal_positives > 0 || $domain->virustotal_bad_urls_and_samples > 0 || $domain->vulnerabilities) {
+                if ((int)$domain->virustotal_positives > 0 || $domain->virustotal_bad_urls_and_samples > 0 || $domain->vulnerabilitiesReport['vulnerabilities']) {
                     $stateImgSrc = pm_Context::getBaseUrl() . '/images/bad.png';
                     $stateImgAlt = $this->lmsg('badReport');
                 }
@@ -239,8 +239,13 @@ class IndexController extends pm_Controller_Action
                 $stateImgSrc = pm_Context::getBaseUrl() . '/images/disabled.png';
                 $stateImgAlt = $this->lmsg('scanningDisabled');
             }
-            if ($domain->vulnerabilities) {
-                $vulnActionUrl = pm_Context::getActionUrl('index', 'vulnerability') . '?domainId=' . $domain->id;
+
+            $vulnActionUrl = pm_Context::getActionUrl('index', 'vulnerability') . '?domainId=' . $domain->id;
+            if ($domain->vulnerabilitiesReport['Error']['IsError']) {
+                $stateImgSrc = pm_Context::getBaseUrl() . '/images/warning.png';
+                $stateImgAlt = $this->lmsg('scannerErrorDomainError');
+                $colVulnerabilities = "<a href='$vulnActionUrl'>" . pm_Locale::lmsg('scannerErrorDomainError') . "</a>";
+            } else if ($domain->vulnerabilitiesReport['vulnerabilities']) {
                 $colVulnerabilities = "<a href='$vulnActionUrl'>" . pm_Locale::lmsg('domainVulnerabilitiesFound') . "</a>";
             }
 
@@ -379,7 +384,7 @@ class IndexController extends pm_Controller_Action
 
         if (isset($report['all'][$domainId])) {
             $this->view->title = pm_Locale::lmsg('vulnerabilityReportPageTitle', ['domain_name' => $report['all'][$domainId]->name]);
-            $this->view->vulnerabilities = $report['all'][$domainId]->vulnerabilities;
+            $this->view->vulnerabilitiesReport = $report['all'][$domainId]->vulnerabilitiesReport;
         }
     }
 }

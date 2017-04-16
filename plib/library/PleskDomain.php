@@ -15,7 +15,12 @@ class Modules_WebsiteVirusCheck_PleskDomain
         $this->enabled = true;
         $this->virustotal_positives = 0;
         $this->virustotal_bad_urls_and_samples = 0;
-        $this->vulnerabilities = [];
+        $this->vulnerabilitiesReport = [
+            'Error' => [
+                'IsError' => false,
+            ],
+            'vulnerabilities' => 0,
+        ];
         $this->documentRoot = $this->getDocumentRoot();
     }
     
