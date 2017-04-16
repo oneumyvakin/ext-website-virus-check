@@ -47,6 +47,7 @@ $messages = array(
     'vulnerabilityErrorSubmitIssue' => 'Please feel free to submit issue in extension repository on <a rel="noopener noreferrer" target="_blank" href="https://github.com/plesk/ext-website-virus-check">GitHub</a>',
 
     'scannerErrorEncodeDomainsJson' => 'Vulnerability Scanner has failed to encode JSON to %%path%%',
+    'scannerErrorSearchVersion' => 'Vulnerability Scanner has failed to search software version: %%msg%%',
 
     'yes' => 'Yes',
     'no' => 'No',

@@ -17,3 +17,6 @@ $task->setCmd('virustotal-periodic-task.php');
 pm_Scheduler::getInstance()->putTask($task);
 pm_Settings::set('virustotal_periodic_task_id', $task->getId());
 
+pm_Settings::set('serverUrl', Modules_WebsiteVirusCheck_Helper::getServerUrl());
+
+

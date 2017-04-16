@@ -43,6 +43,12 @@ $messages = array(
     'vulnerabilitySoftwareName' => 'Название ПО',
     'vulnerabilitySoftwareVersion' => 'Версия ПО',
     'vulnerabilityPath' => 'Путь',
+    'vulnerabilityError' => 'Во время проверки этой уязвимости произошла ошибка',
+    'vulnerabilityErrorSubmitIssue' => 'Пожалуйста, создайте issue в репозитории расширения на <a rel="noopener noreferrer" target="_blank" href="https://github.com/plesk/ext-website-virus-check">GitHub</a>',
+
+    'scannerErrorEncodeDomainsJson' => 'Сканнер уязвимостей не смог закодировать JSON в файл %%path%%',
+    'scannerErrorSearchVersion' => 'Сканнер уязвимостей не смог найти версию программного обеспечения: %%msg%%',
+
     'yes' => 'Да',
     'no' => 'Нет',
     'unknown' => 'Неизвестно',

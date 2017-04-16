@@ -626,7 +626,7 @@ class Modules_WebsiteVirusCheck_Helper
                 'emailNotificationBodyVulnerabilities',
                 [
                     'domain' => $domain->ascii_name,
-                    'url' => pm_Context::getActionUrl('index', 'vulnerability') . '?domainId=' . $domain->id
+                    'url' => pm_Settings::get('serverUrl') . pm_Context::getActionUrl('index', 'vulnerability') . '?domainId=' . $domain->id
                 ]
             );
         }
@@ -734,5 +734,21 @@ class Modules_WebsiteVirusCheck_Helper
             pm_Settings::set('scannerError', pm_Locale::lmsg($report['Err']['LocaleKey'], $report['Err']['LocaleArgs']));
         }
         return $report;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getServerHostname()
+    {
+        return pm_Bootstrap::getDbAdapter()->fetchOne("select val from misc where param='FullHostName'");
+    }
+
+    /**
+     * @return string
+     */
+    public static function getServerUrl()
+    {
+        return sprintf("https://%s:8443", self::getServerHostname());
     }
 }
