@@ -126,7 +126,7 @@
             "AdvisoryDate": "1481587200",
             "AdvisoryURL": "https://www.joomla.org/announcements/release-news/5693-joomla-3-6-5-released.html",
             "SoftwareType": "Joomla Core",
-            "SoftwareName": "",
+            "SoftwareName": "Joomla",
             "VersionFrom": "1.6.5",
             "VersionTo": "3.6.4",
             "DetectByPathExists": false,
