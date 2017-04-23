@@ -383,7 +383,13 @@ class IndexController extends pm_Controller_Action
         $domainId = (int)$this->_getParam('domainId');
 
         if (isset($report['all'][$domainId])) {
-            $this->view->title = pm_Locale::lmsg('vulnerabilityReportPageTitle', ['domain_name' => $report['all'][$domainId]->name]);
+
+            $this->view->title = pm_Locale::lmsg(
+                'vulnerabilityReportPageTitle',
+                    [
+                        'domain_name' => '<a target="_blank" href="/admin/subscription/login/id/' . $report['all'][$domainId]->webspace_id . '?pageUrl=/web/overview/id/d:' . $domainId . '">' . $report['all'][$domainId]->name . '</a>'
+                    ]
+            );
             $this->view->vulnerabilitiesReport = $report['all'][$domainId]->vulnerabilitiesReport;
         }
     }
