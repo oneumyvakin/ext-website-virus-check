@@ -79,6 +79,7 @@ $messages = array(
     'faq' => 'FAQ',
     'question2' => '<p><b>Q: Почему ежедневная задача выполняется так долго?</b><br />A: Из-за ограничений публичного API расширение отправляет API запросы со скоростью 3 домена в минуту.</p>',
     'question3' => '<p><b>Q: Можно ли выполнять ежедневную задачу несколько раз в один день?</b><br />A: Да, можно.</p>',
+    'question4' => '<p><b>Q: Какие уязвимости может найти сканнер?</b><br />A: Уязвимости в WordPress, Drupal, Joomla, а так же их плагинах, модулях, компонентах и библиотеках поставляемых вместе с ними.</p>',
     'emailNotificationEnabled' => 'Включить почтовые оповещения',
     'emailNotificationSubjectBadDomain' => 'От VirusTotal.com получен "плохой" отчет для домена %%domain%%',
     'emailNotificationBodyBadDomain' => '"Плохой" отчет VirusTotal.com для домена %%domain%% %%url%%',

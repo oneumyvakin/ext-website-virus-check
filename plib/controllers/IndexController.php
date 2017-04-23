@@ -180,9 +180,10 @@ class IndexController extends pm_Controller_Action
         $this->view->about = $this->lmsg('about');
         $this->view->feedback = $this->lmsg('feedback');
         $this->view->faq = $this->lmsg('faq');
-        $this->view->question1 = $this->lmsg('question1');
+
         $this->view->question2 = $this->lmsg('question2');
         $this->view->question3 = $this->lmsg('question3');
+        $this->view->question4 = $this->lmsg('question4');
     }
     
     private function _getReportSummary()

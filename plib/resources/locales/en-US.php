@@ -79,6 +79,7 @@ $messages = array(
     'faq' => 'FAQ',
     'question2' => '<p><b>Q: Why daily scheduled tasks take so long to execute?</b><br />A: Because of the limitations of the public API the extension sends the API requests at the speed of 3 domains per minute.</p>',
     'question3' => '<p><b>Q: Can I execute daily scheduled task several times in a one day?</b><br />A: Yes, you can.</p>',
+    'question4' => '<p><b>Q: What kind of vulnerabilities scanner can found?</b><br />A: Vulnerabilities in WordPress, Drupal, Joomla and plugins, modules, components, libraries distributed with them.</p>',
     'emailNotificationEnabled' => 'Enable email notifications',
     'emailNotificationSubjectBadDomain' => 'VirusTotal.com reports "bad" domain %%domain%%',
     'emailNotificationBodyBadDomain' => 'VirusTotal.com reports domain %%domain%% as "bad" %%url%%',
