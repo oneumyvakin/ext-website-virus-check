@@ -1,3 +1,8 @@
+# 1.3 (23 April 2017)
+
+* [+] Scanner for WordPress, Drupal and Joomla vulnerabilities
+* [*] The minimum version is now Plesk 17.0.17
+
 # 1.2 (3 April 2017)
 
 * [+] Selectively disabling scan for sites
