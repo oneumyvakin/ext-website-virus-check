@@ -656,6 +656,9 @@ class Modules_WebsiteVirusCheck_Helper
      * @return void
      */
     static function setDomainReport($domainId, $report) {
+        if (isset($report['domain'])) {
+            unset($report['domain']->vulnerabilitiesReport);
+        }
         pm_Settings::set('domain_id_' . $domainId, json_encode($report));
     }
 
