@@ -47,6 +47,7 @@ $messages = array(
     'vulnerabilityError' => 'Во время проверки этой уязвимости произошла ошибка',
     'vulnerabilityErrorSubmitIssue' => 'Пожалуйста, создайте issue в репозитории расширения на <a rel="noopener noreferrer" target="_blank" href="https://github.com/plesk/ext-website-virus-check">GitHub</a>',
 
+    'scannerErrorExecution' => 'Выполнение сканнера уязвимостей завершилось с кодом возврата: %%code%% %%stderr%% %%stdout%%',
     'scannerErrorEncodeDomainsJson' => 'Сканнер уязвимостей не смог закодировать JSON в файл %%path%%',
     'scannerErrorDomainError' => 'При проверке этого домена сканером уязвимостей произошла ошибка',
     'scannerErrorFailedWebAppCheck' => 'Проверка веб-приложения завершилась с ошибкой: %%msg%%',

@@ -106,6 +106,11 @@ class Modules_WebsiteVirusCheck_PleskDomain
      */
     public function getDocumentRoot() {
         $documentRoot = '';
+
+        if (!method_exists('pm_Domain', 'getByDomainId')) { // Does not exists in Plesk 12.5
+            return $documentRoot;
+        }
+
         try {
             $documentRoot = pm_Domain::getByDomainId($this->id)->getDocumentRoot();
         } catch (Exception $e) {

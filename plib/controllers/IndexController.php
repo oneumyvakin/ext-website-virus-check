@@ -273,7 +273,7 @@ class IndexController extends pm_Controller_Action
         ];
         $list = new pm_View_List_Simple($this->view, $this->_request, $options);
         $list->setData($data);
-        $list->setColumns([
+        $columns = [
             pm_View_List_Simple::COLUMN_SELECTION,
             'column-1' => [
                 'title' => $this->lmsg('scanningState'),
@@ -291,11 +291,7 @@ class IndexController extends pm_Controller_Action
                 'title' => $this->lmsg('scanDate'),
                 'sortable' => true,
             ],
-            'column-4' => [
-                'title' => $this->lmsg('vulnerabilities'),
-                'noEscape' => true,
-                'sortable' => false,
-            ],
+            // column-4
             'column-5' => [
                 'title' => $this->lmsg('checkResult'),
                 'sortable' => true,
@@ -309,9 +305,17 @@ class IndexController extends pm_Controller_Action
                 'noEscape' => true,
                 'searchable' => false,
                 'sortable' => false,
-                
+
             ],
-        ]);
+        ];
+        if (pm_ProductInfo::getVersion() == '12.5.30') { // Not supported on Windows platform
+            $columns['column-4'] = [
+                'title' => $this->lmsg('vulnerabilities'),
+                'noEscape' => true,
+                'sortable' => false,
+            ];
+        }
+        $list->setColumns($columns);
 
         $listTools = [];
         if (class_exists('pm_LongTask_Manager')) { // Since Plesk 17.0

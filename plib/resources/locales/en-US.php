@@ -47,6 +47,7 @@ $messages = array(
     'vulnerabilityError' => 'Error occurred while processing this vulnerability',
     'vulnerabilityErrorSubmitIssue' => 'Please feel free to submit issue in extension repository on <a rel="noopener noreferrer" target="_blank" href="https://github.com/plesk/ext-website-virus-check">GitHub</a>',
 
+    'scannerErrorExecution' => 'Vulnerability Scanner execution exit code: %%code%% %%stderr%% %%stdout%%',
     'scannerErrorEncodeDomainsJson' => 'Vulnerability Scanner has failed to encode JSON to %%path%%',
     'scannerErrorDomainError' => 'Vulnerability Scanner has failed while processing this domain',
     'scannerErrorFailedWebAppCheck' => 'Web application check has failed: %%msg%%',

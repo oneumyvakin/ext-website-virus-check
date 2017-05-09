@@ -705,6 +705,17 @@ class Modules_WebsiteVirusCheck_Helper
 
     public static function getScannerReport()
     {
+        if (pm_ProductInfo::getVersion() == '12.5.30') {
+            return [
+                'Error' => [
+                    'IsError' => false,
+                    'LocaleKey' => '',
+                    'LocaleArgs' => [],
+                ],
+                'Domains' => [],
+            ];
+        }
+
         pm_Settings::clean('scannerError');
         $report = self::executeScanner(["-report"]);
         if ($report['Error']['IsError']) {
@@ -715,6 +726,17 @@ class Modules_WebsiteVirusCheck_Helper
 
     public static function scanDomains($domains)
     {
+        if (pm_ProductInfo::getVersion() == '12.5.30') {
+            return [
+                'Error' => [
+                    'IsError' => false,
+                    'LocaleKey' => '',
+                    'LocaleArgs' => [],
+                ],
+                'Domains' => [],
+            ];
+        }
+
         pm_Settings::clean('scannerError');
         $dbRootPath = pm_Context::getVarDir();
         $domainsPath = pm_Context::getVarDir() . '/domains.json';
