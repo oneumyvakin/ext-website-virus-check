@@ -245,7 +245,7 @@
             "CVE": "No CVE",
             "AdvisoryDate": "1489708800",
             "AdvisoryURL": "http://seclists.org/bugtraq/2017/Mar/5",
-            "SoftwareType": "WordPress Plugin",
+            "SoftwareType": "WordPress Theme",
             "SoftwareName": "Theme Atahualpa",
             "VersionFrom": "0.0.0",
             "VersionTo": "3.7.24",

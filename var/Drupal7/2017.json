@@ -1,7 +1,167 @@
 {
     "Vulnerabilities": [
         {
-            "Title": "Moderately Critical - Office Hours 1.5 - Cross Site Scripting - DRUPAL-SA-CONTRIB-2017-032",
+            "Title": "Media 2.0 - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-044",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2877316",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Media",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.0",
+            "DetectByPathExists": false,
+            "Path": "sites/all/modules/media/media.info"
+        },
+        {
+            "Title": "Webform Multiple file upload 1.4 - Moderately Critical - Access bypass - SA-CONTRIB-2017-045",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2877356",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Webform Multiple file upload",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.4",
+            "DetectByPathExists": false,
+            "Path": "sites/all/modules/webform_multifile/webform_multifile.info"
+        },
+        {
+            "Title": "DRD Agent 3.0 - Critical - Multiple vulnerabilites - SA-CONTRIB-2017-047",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2877392",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "DRD Agent",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "3.0",
+            "DetectByPathExists": false,
+            "Path": "sites/all/modules/drd_agent/drd_agent.info"
+        },
+        {
+            "Title": "Shibboleth authentication 4.3 - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-043",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2875366",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Shibboleth authentication",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "4.3",
+            "DetectByPathExists": false,
+            "Path": "sites/all/modules/shib_auth/shib_auth.info"
+        },
+        {
+            "Title": "Media 1.9 - Critical - 1.x branch unsupported - SA-CONTRIB-2017-042",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869190",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Media",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.9",
+            "DetectByPathExists": false,
+            "Path": "sites/all/modules/media/media.info"
+        },
+        {
+            "Title": "Filemaker Form 1.1 - Critical - Unsupported - SA-CONTRIB-2017-37",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869129",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Filemaker",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.1",
+            "DetectByPathExists": true,
+            "Path": "sites/all/modules/filemakerform/filemakerform.info"
+        },
+        {
+            "Title": "References 2.1 - Unsupported - SA-CONTRIB-2017-38",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869138",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "References",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.1",
+            "Path": "sites/all/modules/references/references.info"
+        },
+        {
+            "Title": "Open Atrium Comment 2.84.0 - Moderately critical - Information Disclosure - SA-CONTRIB-2017-041",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869156#comment",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Open Atrium Comment",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.84.0",
+            "Path": "sites/all/modules/oa_comment/oa_comment.info"
+        },
+        {
+            "Title": "Open Atrium News 2.84 - Moderately critical - Information Disclosure - SA-CONTRIB-2017-041",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869156#news",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Open Atrium News",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.84",
+            "Path": "sites/all/modules/oa_core/modules/oa_news/oa_news.info"
+        },
+        {
+            "Title": "Open Atrium River 2.84.0 - Moderately critical - Information Disclosure - SA-CONTRIB-2017-041",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869156#river",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Open Atrium River",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.84.0",
+            "Path": "sites/all/modules/oa_core/modules/oa_river/oa_river.info"
+        },
+        {
+            "Title": "Open Atrium Sections 2.84 - Moderately critical - Information Disclosure - SA-CONTRIB-2017-041",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869156#sections",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Open Atrium Sections",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.84",
+            "Path": "sites/all/modules/oa_core/modules/oa_sections/oa_sections.info"
+        },
+        {
+            "Title": "Open Atrium Core 2.84.0 - Moderately critical - Information Disclosure - SA-CONTRIB-2017-041",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869156",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Open Atrium Core",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.84.0",
+            "Path": "sites/all/modules/oa_core/oa_core.info"
+        },
+        {
+            "Title": "Scheduler Workbench Integration 1.2 - Critical - Unsupported - SA-CONTRIB-2017-39",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491048000",
+            "AdvisoryURL": "https://www.drupal.org/node/2869141",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Scheduler Workbench Integration",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.2",
+            "Path": "sites/all/modules/scheduler_workbench/scheduler_workbench.info"
+        },
+        {
+            "Title": "Auto Login URL 1.7 - Less Critical - Access Bypass - DRUPAL-SA-CONTRIB-2017-034",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1491022800",
+            "AdvisoryURL": "https://www.drupal.org/node/2867101",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Auto Login URL",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.7",
+            "Path": "sites/all/modules/auto_login_url/auto_login_url.info"
+        },
+        {
+            "Title": "Moderately Critical 1.5 - Office Hours 1.5 - Cross Site Scripting - DRUPAL-SA-CONTRIB-2017-032",
             "CVE": "No CVE",
             "AdvisoryDate": "1490140800",
             "AdvisoryURL": "https://www.drupal.org/node/2862985",
@@ -9,10 +169,10 @@
             "SoftwareName": "Office Hours",
             "VersionFrom": "0.0.0",
             "VersionTo": "1.5",
-            "Path": "modules/office_hours/office_hours.info"
+            "Path": "sites/all/modules/office_hours/office_hours.info"
         },
         {
-            "Title": "Private - Critical - Access bypass - DRUPAL-SA-CONTRIB-2017-031",
+            "Title": "Private 1.9 - Critical - Access bypass - DRUPAL-SA-CONTRIB-2017-031",
             "CVE": "No CVE",
             "AdvisoryDate": "1489622400",
             "AdvisoryURL": "https://www.drupal.org/node/2860906",
@@ -20,7 +180,7 @@
             "SoftwareName": "Private",
             "VersionFrom": "0.0.0",
             "VersionTo": "1.9",
-            "Path": "modules/private/private.info"
+            "Path": "sites/all/modules/private/private.info"
         },
         {
             "Title": "Drupal up to 7.51/8.2.2 Taxonomy Module information disclosure",
@@ -34,7 +194,7 @@
             "Path": "modules/taxonomy/taxonomy.info"
         },
         {
-            "Title": "Drupal Core - Critical - Multiple Vulnerabilities - SA-CORE-2016-001",
+            "Title": "Drupal Core 6.37 - Critical - Multiple Vulnerabilities - SA-CORE-2016-001",
             "CVE": "CVE-2016-3162",
             "AdvisoryDate": "1456272000",
             "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-001",
@@ -44,19 +204,9 @@
             "VersionTo": "6.37",
             "Path": "modules/system/system.info"
         },
+
         {
-            "Title": "Drupal Core - Critical - Multiple Vulnerabilities - SA-CORE-2016-001",
-            "CVE": "CVE-2016-3162",
-            "AdvisoryDate": "1456272000",
-            "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-001",
-            "SoftwareType": "Drupal Core",
-            "SoftwareName": "Core",
-            "VersionFrom": "7.0",
-            "VersionTo": "7.42",
-            "Path": "modules/system/system.info"
-        },
-        {
-            "Title": "Services - Highly Critical - Arbitrary Code Execution - SA-CONTRIB-2017-029",
+            "Title": "Services 3.18 - Highly Critical - Arbitrary Code Execution - SA-CONTRIB-2017-029",
             "CVE": "No CVE",
             "AdvisoryDate": "1488931200",
             "AdvisoryURL": "https://www.drupal.org/node/2858847",
@@ -67,7 +217,18 @@
             "Path": "sites/all/modules/services/services.info"
         },
         {
-            "Title": "RESTful - Moderately Critical - Access Bypass - SA-CONTRIB-2017-018",
+            "Title": "Drupal Core 7.42 - Critical - Multiple Vulnerabilities - SA-CORE-2016-001",
+            "CVE": "CVE-2016-3162",
+            "AdvisoryDate": "1456272000",
+            "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-001",
+            "SoftwareType": "Drupal Core",
+            "SoftwareName": "Core",
+            "VersionFrom": "7.0",
+            "VersionTo": "7.42",
+            "Path": "modules/system/system.info"
+        },
+        {
+            "Title": "RESTful 2.15 - Moderately Critical - Access Bypass - SA-CONTRIB-2017-018",
             "CVE": "No CVE",
             "AdvisoryDate": "1488931200",
             "AdvisoryURL": "https://www.drupal.org/node/2852928",
@@ -79,7 +240,7 @@
         },
 
         {
-            "Title": "Search API Sorts - Moderately Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-016",
+            "Title": "Search API Sorts 1.6 - Moderately Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-016",
             "CVE": "No CVE",
             "AdvisoryDate": "1487116800",
             "AdvisoryURL": "https://www.drupal.org/node/2852922",
@@ -97,22 +258,24 @@
             "SoftwareType": "Drupal Module",
             "SoftwareName": "Breakpoint Panels",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
             "Path": "sites/all/modules/breakpoint_panels/breakpoint_panels.info"
         },
         {
             "Title": "AES - Critical - Unsupported - SA-CONTRIB-2017-027",
             "CVE": "No CVE",
             "AdvisoryDate": "1488326400",
-            "AdvisoryURL": "https://www.drupal.org/node/2857021",
+            "AdvisoryURL": "https://www.drupal.org/node/2857028",
             "SoftwareType": "Drupal Module",
             "SoftwareName": "AES",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
             "Path": "sites/all/modules/aes/aes.info"
         },
         {
-            "Title": "Location Map - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-026",
+            "Title": "Location Map 2.3 - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-026",
             "CVE": "No CVE",
             "AdvisoryDate": "1488326400",
             "AdvisoryURL": "https://www.drupal.org/node/2857021",
@@ -130,22 +293,23 @@
             "SoftwareType": "Drupal Module",
             "SoftwareName": "Remember Me",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
             "Path": "sites/all/modules/remember_me/remember_me.info"
         },
         {
-            "Title": "RestWS - Moderately Critical - Information Disclosure - SA-CONTRIB-2017-024",
+            "Title": "RestWS 2.6 - Moderately Critical - Information Disclosure - SA-CONTRIB-2017-024",
             "CVE": "No CVE",
             "AdvisoryDate": "1488326400",
             "AdvisoryURL": "https://www.drupal.org/node/2857014",
             "SoftwareType": "Drupal Module",
-            "SoftwareName": "RESTful web services",
+            "SoftwareName": "RestWS",
             "VersionFrom": "0.0.0",
             "VersionTo": "2.6",
             "Path": "sites/all/modules/restws/restws.info"
         },
         {
-            "Title": "Views Send - Moderately Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2016-061",
+            "Title": "Views Send 1.2 - Moderately Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2016-061",
             "CVE": "No CVE",
             "AdvisoryDate": "1478649600",
             "AdvisoryURL": "https://www.drupal.org/node/2826155",
@@ -156,7 +320,7 @@
             "Path": "sites/all/modules/views_send/views_send.info"
         },
         {
-            "Title": "DownloadFile - Critical - Unsupported - SA-CONTRIB-2017-023",
+            "Title": "DownloadFile 2.0 - Critical - Unsupported - SA-CONTRIB-2017-023",
             "CVE": "No CVE",
             "AdvisoryDate": "1487721600",
             "AdvisoryURL": "https://www.drupal.org/node/2854983",
@@ -167,7 +331,7 @@
             "Path": "sites/all/modules/download_file/download_file.info"
         },
         {
-            "Title": "Views - Moderately Critical - Access Bypass - SA-CONTRIB-2017-022",
+            "Title": "Views 3.14 - Moderately Critical - Access Bypass - SA-CONTRIB-2017-022",
             "CVE": "No CVE",
             "AdvisoryDate": "1487721600",
             "AdvisoryURL": "https://www.drupal.org/node/2854980",
@@ -185,11 +349,12 @@
             "SoftwareType": "Drupal Module",
             "SoftwareName": "Unpublished 404",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
             "Path": "sites/all/modules/unpublished_404/unpublished_404.info"
         },
         {
-            "Title": "Timezone Detect - Moderately Critical - Cross Site Request Forgery - SA-CONTRIB-2017-020",
+            "Title": "Timezone Detect 1.1 - Moderately Critical - Cross Site Request Forgery - SA-CONTRIB-2017-020",
             "CVE": "No CVE",
             "AdvisoryDate": "1487721600",
             "AdvisoryURL": "https://www.drupal.org/node/2854962",
@@ -200,7 +365,7 @@
             "Path": "sites/all/modules/timezone_detect/timezone_detect.info"
         },
         {
-            "Title": "Metatag - Moderately Critical - Information disclosure - SA-CONTRIB-2017-019",
+            "Title": "Metatag 1.20 - Moderately Critical - Information disclosure - SA-CONTRIB-2017-019",
             "CVE": "No CVE",
             "AdvisoryDate": "1487116800",
             "AdvisoryURL": "https://www.drupal.org/node/2852937",
@@ -211,7 +376,7 @@
             "Path": "sites/all/modules/metatag/metatag.info"
         },
         {
-            "Title": "Flag clear - Moderately Critical - Cross Site Request Forgery (CSRF) - SA-CONTRIB-2017-017",
+            "Title": "Flag clear 1.9 - Moderately Critical - Cross Site Request Forgery (CSRF) - SA-CONTRIB-2017-017",
             "CVE": "No CVE",
             "AdvisoryDate": "1487116800",
             "AdvisoryURL": "https://www.drupal.org/node/2852924",
@@ -222,7 +387,7 @@
             "Path": "sites/all/modules/flag_clear/flag_clear.info"
         },
         {
-            "Title": "Hotjar - Moderately Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-015",
+            "Title": "Hotjar 1.1 - Moderately Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-015",
             "CVE": "No CVE",
             "AdvisoryDate": "1487116800",
             "AdvisoryURL": "https://www.drupal.org/node/2852916",
@@ -233,7 +398,7 @@
             "Path": "sites/all/modules/hotjar/hotjar.info"
         },
         {
-            "Title": "OSF for Drupal - Less Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-014",
+            "Title": "OSF for Drupal 3.2 - Less Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-014",
             "CVE": "No CVE",
             "AdvisoryDate": "1486512000",
             "AdvisoryURL": "https://www.drupal.org/node/2850922",
@@ -244,39 +409,39 @@
             "Path": "sites/all/modules/osf/osf.info"
         },
         {
-            "Title": "Wetkit Omega - Moderately Critical - Access Bypass - SA-CONTRIB-2017-012",
+            "Title": "Wetkit Omega 1.14 - Moderately Critical - Access Bypass - SA-CONTRIB-2017-012",
             "CVE": "No CVE",
             "AdvisoryDate": "1486512000",
             "AdvisoryURL": "https://www.drupal.org/node/2850880",
             "SoftwareType": "Drupal Module",
-            "SoftwareName": "WetKit Omega",
+            "SoftwareName": "Wetkit Omega",
             "VersionFrom": "0.0.0",
             "VersionTo": "1.14",
             "Path": "sites/all/themes/wetkit_omega/wetkit_omega.info"
         },
         {
-            "Title": "Facebook Pull - Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-011",
+            "Title": "Facebook Pull 3.0 - Critical - Cross Site Scripting (XSS) - SA-CONTRIB-2017-011",
             "CVE": "No CVE",
             "AdvisoryDate": "1486512000",
             "AdvisoryURL": "https://www.drupal.org/node/2850873",
-            "SoftwareName": "Facebook pull",
+            "SoftwareName": "Facebook Pull",
             "VersionFrom": "0.0.0",
             "VersionTo": "3.0",
             "Path": "sites/all/modules/facebook_pull/facebook_pull.info"
         },
         {
-            "Title": "Storage API stream wrappers - Moderately Critical - Access bypass - SA-CONTRIB-2017-010",
+            "Title": "Storage API stream wrappers 1.0 - Moderately Critical - Access bypass - SA-CONTRIB-2017-010",
             "CVE": "No CVE",
             "AdvisoryDate": "1485907200",
             "AdvisoryURL": "https://www.drupal.org/node/2850866",
             "SoftwareType": "Drupal Module",
-            "SoftwareName": "Storage Stream Wrappers",
+            "SoftwareName": "Storage API stream wrappers",
             "VersionFrom": "0.0.0",
             "VersionTo": "1.0",
             "Path": "sites/all/modules/storage_api_stream_wrapper/storage_stream_wrapper.info"
         },
         {
-            "Title": "Better Exposed Filters - Less Critical - Cross Site Sscripting (XSS) - SA-CONTRIB-2017-009",
+            "Title": "Better Exposed Filters 3.3 - Less Critical - Cross Site Sscripting (XSS) - SA-CONTRIB-2017-009",
             "CVE": "No CVE",
             "AdvisoryDate": "1485907200",
             "AdvisoryURL": "https://www.drupal.org/node/2848865",
@@ -287,7 +452,7 @@
             "Path": "sites/all/modules/better_exposed_filters/better_exposed_filters.info"
         },
         {
-            "Title": "Node Notify - Critical - Multiple Vulnerabilities - SA-CONTRIB-2016-013",
+            "Title": "Node Notify 1.2 - Critical - Multiple Vulnerabilities - SA-CONTRIB-2016-013",
             "CVE": "No CVE",
             "AdvisoryDate": "1456876800",
             "AdvisoryURL": "https://www.drupal.org/node/2679541",
@@ -298,7 +463,7 @@
             "Path": "sites/all/modules/node_notify/node_notify.info"
         },
         {
-            "Title": "SalesCloud - Critical - Unsupported - SA-CONTRIB-2017-008",
+            "Title": "SalesCloud 1.4 - Critical - Unsupported - SA-CONTRIB-2017-008",
             "CVE": "No CVE",
             "AdvisoryDate": "1485302400",
             "AdvisoryURL": "https://www.drupal.org/node/2846791",
@@ -309,7 +474,7 @@
             "Path": "sites/all/modules/salescloud/salescloud.info"
         },
         {
-            "Title": "Coder - Highly Critical - Remote Code Execution - SA-CONTRIB-2016-039",
+            "Title": "Coder 1.2 - Highly Critical - Remote Code Execution - SA-CONTRIB-2016-039",
             "CVE": "No CVE",
             "AdvisoryDate": "1468368000",
             "AdvisoryURL": "https://www.drupal.org/node/2765575",
@@ -320,18 +485,7 @@
             "Path": "sites/all/modules/coder/coder.info"
         },
         {
-            "Title": "Coder - Highly Critical - Remote Code Execution - SA-CONTRIB-2016-039",
-            "CVE": "No CVE",
-            "AdvisoryDate": "1468368000",
-            "AdvisoryURL": "https://www.drupal.org/node/2765575",
-            "SoftwareType": "Drupal Module",
-            "SoftwareName": "Coder",
-            "VersionFrom": "2.0.0",
-            "VersionTo": "2.5",
-            "Path": "sites/all/modules/coder/coder.info"
-        },
-        {
-            "Title": "Webform Multiple File Upload - Critical - Remote Code Execution - SA-CONTRIB-2016-038",
+            "Title": "Webform Multiple File Upload 1.3 - Critical - Remote Code Execution - SA-CONTRIB-2016-038",
             "CVE": "No CVE",
             "AdvisoryDate": "1468368000",
             "AdvisoryURL": "https://www.drupal.org/node/2765573",
@@ -342,7 +496,18 @@
             "Path": "sites/all/modules/webform_multifile/webform_multifile.info"
         },
         {
-            "Title": "Mailjet - Highly critical - Arbitrary PHP code execution - SA-CONTRIB-2017-005",
+            "Title": "Coder 2.5 - Highly Critical - Remote Code Execution - SA-CONTRIB-2016-039",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1468368000",
+            "AdvisoryURL": "https://www.drupal.org/node/2765575",
+            "SoftwareType": "Drupal Module",
+            "SoftwareName": "Coder",
+            "VersionFrom": "2.0.0",
+            "VersionTo": "2.5",
+            "Path": "sites/all/modules/coder/coder.info"
+        },
+        {
+            "Title": "Mailjet 2.9 - Highly critical - Arbitrary PHP code execution - SA-CONTRIB-2017-005",
             "CVE": "No CVE",
             "AdvisoryDate": "1484092800",
             "AdvisoryURL": "https://www.drupal.org/node/2842760",
@@ -360,11 +525,12 @@
             "SoftwareType": "Drupal Module",
             "SoftwareName": "Microblog",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
             "Path": "sites/all/modules/microblog/microblog.info"
         },
         {
-            "Title": "OpenLucius - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-004",
+            "Title": "OpenLucius 1.6.0 - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-004",
             "CVE": "No CVE",
             "AdvisoryDate": "1485302400",
             "AdvisoryURL": "https://www.drupal.org/node/2842759",
@@ -375,7 +541,7 @@
             "Path": "sites/all/modules/openlucius/openlucius.info"
         },
         {
-            "Title": "Doubleclick for Publishers (DFP) - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-002",
+            "Title": "Doubleclick for Publishers (DFP) 1.4.0 - Moderately Critical - Multiple vulnerabilities - SA-CONTRIB-2017-002",
             "CVE": "No CVE",
             "AdvisoryDate": "1485302400",
             "AdvisoryURL": "https://www.drupal.org/node/2841114",
@@ -386,7 +552,7 @@
             "Path": "sites/all/modules/dfp/dfp.info"
         },
         {
-            "Title": "Elysia Cron - Critical - Arbitrary PHP code execution - SA-CONTRIB-2016-062",
+            "Title": "Elysia Cron 2.3.0 - Critical - Arbitrary PHP code execution - SA-CONTRIB-2016-062",
             "CVE": "No CVE",
             "AdvisoryDate": "1480464000",
             "AdvisoryURL": "https://www.drupal.org/node/2831900",
@@ -397,7 +563,7 @@
             "Path": "sites/all/modules/elysia_cron/elysia_cron.info"
         },
         {
-            "Title": "Drupal Core - Moderately Critical - Multiple Vulnerabilities - SA-CORE-2016-005",
+            "Title": "Drupal Core 7.51 - Moderately Critical - Multiple Vulnerabilities - SA-CORE-2016-005",
             "CVE": "CVE-2016-9451",
             "AdvisoryDate": "1479254400",
             "AdvisoryURL": "https://www.drupal.org/SA-CORE-2016-005",
@@ -408,7 +574,7 @@
             "Path": "modules/system/system.info"
         },
         {
-            "Title": "Workbench Moderation - Moderately Critical - Information Disclosure - SA-CONTRIB-2016-060",
+            "Title": "Workbench Moderation 3.0 - Moderately Critical - Information Disclosure - SA-CONTRIB-2016-060",
             "CVE": "No CVE",
             "AdvisoryDate": "1478044800",
             "AdvisoryURL": "https://www.drupal.org/node/2824455",
@@ -419,7 +585,7 @@
             "Path": "sites/all/modules/workbench_moderation/workbench_moderation.info"
         },
         {
-            "Title": "Tripal BLAST UI - Highly Critical - Remote Code Execution - SA-CONTRIB-2016-054",
+            "Title": "Tripal BLAST UI 1.1 - Highly Critical - Remote Code Execution - SA-CONTRIB-2016-054",
             "CVE": "No CVE",
             "AdvisoryDate": "1477440000",
             "AdvisoryURL": "https://www.drupal.org/node/2822366",

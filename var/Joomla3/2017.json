@@ -42,7 +42,7 @@
             "AdvisoryDate": "1489795200",
             "AdvisoryURL": "https://vel.joomla.org/resolved/1937-booklibrary-3-6-1-sql-injectionn",
             "SoftwareType": "Joomla Component",
-            "SoftwareName": "Vehicle Manager",
+            "SoftwareName": "BookLibrary",
             "VersionFrom": "0.0.0",
             "VersionTo": "3.6.14",
             "DetectByPathExists": false,
@@ -61,18 +61,6 @@
             "Path": "administrator/components/com_vehiclemanager/vehiclemanager.xml"
         },
         {
-            "Title": "High Priority - Component Vehicle Manager 3.9.4 - SQL Injection",
-            "CVE": "No CVE",
-            "AdvisoryDate": "1489795200",
-            "AdvisoryURL": "https://vel.joomla.org/resolved/1940-vehicle-manager-3-9-sql-injection",
-            "SoftwareType": "Joomla Component",
-            "SoftwareName": "Vehicle Manager",
-            "VersionFrom": "0.0.0",
-            "VersionTo": "3.9.4",
-            "DetectByPathExists": false,
-            "Path": "administrator/components/com_vehiclemanager/vehiclemanager_free.xml"
-        },
-        {
             "Title": "High Priority - Component AppointmentBookingPro 4.0.1 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489622400",
@@ -85,7 +73,19 @@
             "Path": "administrator/components/com_rsappt_pro3/rsappt_pro3.xml"
         },
         {
-            "Title": "High Priority - Component J-BusinessDirectory 4.6.8 - SQL Injection",
+            "Title": "High Priority - Component Vehicle Manager 3.9.4 - SQL Injection",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1489795200",
+            "AdvisoryURL": "https://vel.joomla.org/resolved/1940-vehicle-manager-3-9-sql-injection",
+            "SoftwareType": "Joomla Component",
+            "SoftwareName": "Vehicle Manager",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "3.9.4",
+            "DetectByPathExists": false,
+            "Path": "administrator/components/com_vehiclemanager/vehiclemanager_free.xml"
+        },
+        {
+            "Title": "High Priority - Component J-BusinessDirectory 4.7.1 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489622400",
             "AdvisoryURL": "https://vel.joomla.org/resolved/1944-j-business-directory-by-cms-junkie-4-6-0-sql-injection",
@@ -97,14 +97,14 @@
             "Path": "administrator/components/com_jbusinessdirectory/jbusinessdirectory.xml"
         },
         {
-            "Title": "High Priority - Component JCruiseReservation v3.0 - SQL Injection",
+            "Title": "High Priority - Component JCruiseReservation v3.0.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489622400",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1955-j-cruisereservation-3-0-sql-injection",
             "SoftwareType": "Joomla Component",
             "SoftwareName": "JCruiseReservation",
             "VersionFrom": "0.0.0",
-            "VersionTo": "6.0.1",
+            "VersionTo": "3.0.0",
             "DetectByPathExists": false,
             "Path": "administrator/components/com_jcruisereservation/jcruisereservation.xml"
         },
@@ -133,7 +133,7 @@
             "Path": ""
         },
         {
-            "Title": "High Priority - PHPMailer - PHPMailer < 5.2.20 Remote Code Execution",
+            "Title": "High Priority - PHPMailer - PHPMailer 5.2.19 Remote Code Execution",
             "CVE": "CVE-2016-10045",
             "AdvisoryDate": "1481587200",
             "AdvisoryURL": "https://developer.joomla.org/security-centre/668-20161205-phpmailer-security-advisory.html",
@@ -151,31 +151,31 @@
             "AdvisoryDate": "1479513600",
             "AdvisoryURL": "http://seclists.org/fulldisclosure/2016/Nov/117",
             "SoftwareType": "Joomla Component",
-            "SoftwareName": "System - K2",
+            "SoftwareName": "K2",
             "VersionFrom": "0.0.0",
             "VersionTo": "2.7.1",
             "DetectByPathExists": false,
             "Path": "plugins/system/k2/k2.xml"
         },
         {
-            "Title": "Google Maps Plugin DDoS Attacks Vulnerability",
+            "Title": "Google Maps 3.2.0 Plugin DDoS Attacks Vulnerability",
             "CVE": "No CVE",
             "AdvisoryDate": "1399161600",
             "AdvisoryURL": "https://securityvulns.com/docs30599.html",
             "SoftwareType": "Joomla Component",
-            "SoftwareName": "System - Google Maps",
+            "SoftwareName": "Google Maps",
             "VersionFrom": "0.0.0",
             "VersionTo": "3.2.0",
             "DetectByPathExists": false,
             "Path": "plugins/system/plugin_googlemap3/plugin_googlemap3.xml"
         },
         {
-            "Title": "High Priority - Component Google Map Store Locator v4.4 - SQL Injection",
+            "Title": "High Priority - Component Google Map Store Locator v4.4.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1481587200",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1946-google-map-store-locator-by-matamko-4-0-sql-injection",
             "SoftwareType": "Joomla Component",
-            "SoftwareName": "PayPal IPN for DOCman",
+            "SoftwareName": "Google Map Store Locator",
             "VersionFrom": "0.0.0",
             "VersionTo": "4.4.0",
             "DetectByPathExists": true,
@@ -187,14 +187,14 @@
             "AdvisoryDate": "1481587200",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1950-most-wanted-real-estate-1-1-0-sql-injection",
             "SoftwareType": "Joomla Component",
-            "SoftwareName": "PayPal IPN for DOCman",
+            "SoftwareName": "Most Wanted Real Estate",
             "VersionFrom": "0.0.0",
             "VersionTo": "1.1.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_mostwantedrealestate"
         },
         {
-            "Title": "High Priority - Component PayPal IPN for DOCman v3.1 - SQL Injection",
+            "Title": "High Priority - Component PayPal IPN for DOCman v3.1.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1481587200",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1945-paypal-ipn-for-docman-by-shopfiles-com-3-1-sql-injection",
@@ -206,19 +206,19 @@
             "Path": "administrator/components/com_docmanpaypal"
         },
         {
-            "Title": "High Priority - Component J-BusinessDirectory v4.6.8 - SQL Injection",
+            "Title": "High Priority - Component J-BusinessDirectory v4.7.2 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1481587200",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1944-j-business-directory-by-cms-junkie-4-6-0-sql-injection",
             "SoftwareType": "Joomla Component",
             "SoftwareName": "J-BusinessDirectory",
             "VersionFrom": "0.0.0",
-            "VersionTo": "4.6.8",
+            "VersionTo": "4.7.2",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_jbusinessdirectory"
         },
         {
-            "Title": "High Priority - Component Eventix Events Calendar v1.0 - SQL Injection",
+            "Title": "High Priority - Component Eventix Events Calendar v1.0.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1481587200",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1942-eventix-events-calendar-by-informafix-1-0-sql-injection",
@@ -254,7 +254,7 @@
             "Path": "administrator/components/com_jepropertyfinder"
         },
         {
-            "Title": "High Priority - Component VehicleManager 3.9 - SQL Injection",
+            "Title": "High Priority - Component VehicleManager 3.9.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1940-vehicle-manager-3-9-sql-injection",
@@ -264,18 +264,6 @@
             "VersionTo": "3.9.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_vehiclemanage"
-        },
-        {
-            "Title": "High Priority - Component RealEstateManager 3.9 - SQL Injection",
-            "CVE": "No CVE",
-            "AdvisoryDate": "1489017600",
-            "AdvisoryURL": "https://vel.joomla.org/live-vel/1939-real-estate-manager-3-9-sql-injection",
-            "SoftwareType": "Joomla Component",
-            "SoftwareName": "RealEstateManager",
-            "VersionFrom": "0.0.0",
-            "VersionTo": "3.9.0",
-            "DetectByPathExists": true,
-            "Path": "administrator/components/com_realestatemanager"
         },
         {
             "Title": "High Priority - Component RealEstateManager 3.9.7 - SQL Injection",
@@ -290,7 +278,7 @@
             "Path": "administrator/components/com_realestatemanager/realestatemanager.xml"
         },
         {
-            "Title": "High Priority - Component MediaLibrary Basic 3.5 - SQL Injection",
+            "Title": "High Priority - Component MediaLibrary Basic 3.5.4 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1938-medialibrary-3-5-sql-injection",
@@ -326,7 +314,7 @@
             "Path": "administrator/components/com_userextranet"
         },
         {
-            "Title": "High Priority - Component Coupon v3.5 - SQL Injection",
+            "Title": "High Priority - Component Coupon v3.5.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1925-coupon-manager-3-5-sql-injection",
@@ -343,14 +331,14 @@
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1926-guesser-1-0-4-sql-injection",
             "SoftwareType": "Joomla Component",
-            "SoftwareName": "Coupon",
+            "SoftwareName": "Guesser",
             "VersionFrom": "0.0.0",
             "VersionTo": "1.0.4",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_guesser"
         },
         {
-            "Title": "High Priority - Component Recipe Manager v2.2 - SQL Injection",
+            "Title": "High Priority - Component Recipe Manager v2.2.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1927-recipe-manager-2-2-sql-injection",
@@ -362,7 +350,7 @@
             "Path": "administrator/components/com_recipe"
         },
         {
-            "Title": "High Priority - Component Abstract v2.1 - SQL Injection",
+            "Title": "High Priority - Component Abstract v2.1.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1928-abstract-manager-2-1-sql-injection",
@@ -374,7 +362,7 @@
             "Path": "administrator/components/com_abstract"
         },
         {
-            "Title": "High Priority - Component OneVote! 1.0 - SQL Injection",
+            "Title": "High Priority - Component OneVote! 1.0.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1929-one-vote-1-0-0-sql-injection",
@@ -386,7 +374,7 @@
             "Path": "administrator/components/com_onevote"
         },
         {
-            "Title": "High Priority - Component AJAX Search for K2 v2.2 - SQL Injection",
+            "Title": "High Priority - Component AJAX Search for K2 v2.2.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1489017600",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1930-ajax-search-for-k2-2-2-sql-injection",
@@ -410,7 +398,7 @@
             "Path": "administrator/components/com_canonical/manifest.xml"
         },
         {
-            "Title": "High Priority - Component JE Grid Folio v4.1.1 - SQL Injection",
+            "Title": "High Priority - Component JE Grid Folio v1.0.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1486944000",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1920-je-grid-folio-all-sql-injection",
@@ -422,7 +410,7 @@
             "Path": "administrator/components/com_jegridfolio"
         },
         {
-            "Title": "High Priority - Component RS-Monials v2.2 - XSS",
+            "Title": "High Priority - Component RS-Monials v2.2.0 - XSS",
             "CVE": "No CVE",
             "AdvisoryDate": "1486944000",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1913-rsmonials-2-2-and-previous-xss-cross-site-scripting",
@@ -434,19 +422,7 @@
             "Path": "administrator/components/com_rsmonials/rsmonials.xml"
         },
         {
-            "Title": "High Priority - Module RS-Monials v2.2 - XSS",
-            "CVE": "No CVE",
-            "AdvisoryDate": "1486944000",
-            "AdvisoryURL": "https://vel.joomla.org/live-vel/1913-rsmonials-2-2-and-previous-xss-cross-site-scripting",
-            "SoftwareType": "Joomla Component",
-            "SoftwareName": "Module RS-Monials",
-            "VersionFrom": "0.0.0",
-            "VersionTo": "2.2.0",
-            "DetectByPathExists": false,
-            "Path": "modules/mod_rsmonials/mod_rsmonials.xml"
-        },
-        {
-            "Title": "High Priority - Module JMS Support - Reflected XSS",
+            "Title": "High Priority - Module JMS Support v3.6.5 - Reflected XSS",
             "CVE": "No CVE",
             "AdvisoryDate": "1486944000",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1904-jms-support-online-module-2-0-0-xss-cross-site-scripting",
@@ -458,7 +434,19 @@
             "Path": "modules/mod_jmssupport"
         },
         {
-            "Title": "High Priority - Component AVChat 3 - File permissions",
+            "Title": "High Priority - Module RS-Monials v2.2.0 - XSS",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1486944000",
+            "AdvisoryURL": "https://vel.joomla.org/live-vel/1913-rsmonials-2-2-and-previous-xss-cross-site-scripting",
+            "SoftwareType": "Joomla Component",
+            "SoftwareName": "Module RS-Monials",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.2.0",
+            "DetectByPathExists": false,
+            "Path": "modules/mod_rsmonials/mod_rsmonials.xml"
+        },
+        {
+            "Title": "High Priority - Component AVChat 3 v2.0.0 - File permissions",
             "CVE": "No CVE",
             "AdvisoryDate": "1480723200",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1896-avchat-video-chat-integration-kit-file-permissions",
@@ -521,19 +509,6 @@
             "Path": "administrator/components/com_videogallerylite/videogallerylite.xml"
         },
         {
-            "Title": "High Priority - Component Huge-IT Slider 1.0.9 - SQL Injection",
-            "CVE": "CVE-2016-1000122",
-            "AdvisoryDate": "1469145600",
-            "AdvisoryURL": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1000122",
-            "SoftwareType": "Joomla Component",
-            "SoftwareName": "Slider",
-            "SoftwareAuthor": "Huge-IT",
-            "VersionFrom": "0.0.0",
-            "VersionTo": "1.0.9",
-            "DetectByPathExists": false,
-            "Path": "administrator/components/com_slider/slider.xml"
-        },
-        {
             "Title": "High Priority - Component Huge-IT Slideshow 1.0.4 - SQL Injection",
             "CVE": "CVE-2016-1000118",
             "AdvisoryDate": "1469145600",
@@ -545,6 +520,19 @@
             "VersionTo": "1.0.4",
             "DetectByPathExists": false,
             "Path": "administrator/components/com_slideshow/slideshow.xml"
+        },
+        {
+            "Title": "High Priority - Component Huge-IT Slider 1.0.9 - SQL Injection",
+            "CVE": "CVE-2016-1000122",
+            "AdvisoryDate": "1469145600",
+            "AdvisoryURL": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-1000122",
+            "SoftwareType": "Joomla Component",
+            "SoftwareName": "Slider",
+            "SoftwareAuthor": "Huge-IT",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.0.9",
+            "DetectByPathExists": false,
+            "Path": "administrator/components/com_slider/slider.xml"
         },
         {
             "Title": "High Priority - Component Huge-IT Gallery 1.1.5 - SQL Injection",
@@ -567,8 +555,8 @@
             "SoftwareType": "Joomla Component",
             "SoftwareName": "AceFTP",
             "VersionFrom": "0.0.0",
-            "VersionTo": "2.1.0",
-            "DetectByPathExists": false,
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
             "Path": "administrator/components/com_aceftp/aceftp.xml"
         },
         {
@@ -579,12 +567,12 @@
             "SoftwareType": "Joomla Component",
             "SoftwareName": "Yeeditor",
             "VersionFrom": "0.0.0",
-            "VersionTo": "2.1.0",
-            "DetectByPathExists": false,
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
             "Path": "administrator/components/com_yeeditor/manifest.xml"
         },
         {
-            "Title": "High Priority - Component Easy Youtube Gallery 1.0.2 - SQL Injection",
+            "Title": "High Priority - Component Easy Youtube Gallery v1.0.2 - SQL Injection",
             "SoftwareType": "Joomla Component",
             "CVE": "No CVE",
             "AdvisoryDate": "1480723200",
@@ -603,12 +591,12 @@
             "SoftwareType": "Joomla Component",
             "SoftwareName": "Komento",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_komento/komento.xml"
         },
         {
-            "Title": "High Priority - Component Alexandria Book Library - SQL Injection",
+            "Title": "High Priority - Component Alexandria Book Library v3.1.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1480723200",
             "AdvisoryURL": "http://www.exploitalert.com/view-details.html?id=23114",
@@ -627,12 +615,12 @@
             "SoftwareType": "Joomla Component",
             "SoftwareName": "Jetext",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_jetext/jetext.xml"
         },
         {
-            "Title": "High Priority - Component jNews - SQL Injection",
+            "Title": "High Priority - Component jNews v8.7.0 - SQL Injection",
             "CVE": "No CVE",
             "AdvisoryDate": "1446076800",
             "AdvisoryURL": "https://www.exploit-db.com/exploits/38565/",
@@ -655,16 +643,16 @@
             "Path": "administrator/components/com_rpl/rpl.xml"
         },
         {
-          "Title": "High Priority - Component Event Manager 2.1.4 - Multiple Vulnerabilities",
-          "CVE": "No CVE",
-          "AdvisoryDate": "1439769600",
-          "AdvisoryURL": "https://vel.joomla.org/resolved/1733-event-manager-2-1-4-and-below-other",
+            "Title": "High Priority - Component Event Manager 2.1.4 - Multiple Vulnerabilities",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1439769600",
+            "AdvisoryURL": "https://vel.joomla.org/resolved/1733-event-manager-2-1-4-and-below-other",
             "SoftwareType": "Joomla Component",
-          "SoftwareName": "Event Manager",
-          "VersionFrom": "0.0.0",
-          "VersionTo": "2.1.4",
-          "DetectByPathExists": false,
-          "Path": "administrator/components/com_jem/jem.xml"
+            "SoftwareName": "Event Manager",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "2.1.4",
+            "DetectByPathExists": false,
+            "Path": "administrator/components/com_jem/jem.xml"
         },
         {
             "Title": "High Priority - Component Vnmshop - Unsupported",
@@ -674,7 +662,7 @@
             "SoftwareType": "Joomla Component",
             "SoftwareName": "Vnmshop",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_vnmshop/vnmshop.xml"
         },
@@ -698,7 +686,7 @@
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1732-memorix-any-sql-injection",
             "SoftwareType": "Joomla Component",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_memorix/memorix.xml"
         },
@@ -710,7 +698,7 @@
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1731-informations-component-any-version-sql-injection",
             "SoftwareType": "Joomla Component",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_informations/informations.xml"
         },
@@ -734,31 +722,19 @@
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1728-araticlhess-module-mod-araticlhess-mod-araticlhes-all-versions-other",
             "SoftwareType": "Joomla Module",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
-            "DetectByPathExists": true,
-            "Path": "modules/mod_araticlhess"
-        },
-        {
-            "Title": "High Priority - Module Araticlhess Module - Backdoor",
-            "SoftwareName": "Araticlhess Module",
-            "CVE": "No CVE",
-            "AdvisoryDate": "1439078400",
-            "AdvisoryURL": "https://vel.joomla.org/live-vel/1728-araticlhess-module-mod-araticlhess-mod-araticlhes-all-versions-other",
-            "SoftwareType": "Joomla Module",
-            "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "modules/mod_araticlhes"
         },
         {
             "Title": "High Priority - Component MyBlog by Azrul - SQL Injection",
-            "SoftwareName": "My Blog",
+            "SoftwareName": "MyBlog",
             "CVE": "No CVE",
             "AdvisoryDate": "1437696000",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1726-myblog-by-azrul-abandonware-sqli-afu",
             "SoftwareType": "Joomla Component",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_myblog/myblog.xml"
         },
@@ -770,24 +746,12 @@
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1714-simpleimageupload-1-2-other",
             "SoftwareType": "Joomla Component",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "administrator/components/com_simpleimageupload/manifest.xml"
         },
         {
-            "Title": "High Priority - Plugin SimpleImageUpload by Tuts4You - Other",
-            "SoftwareName": "SimpleImageUpload",
-            "CVE": "No CVE",
-            "AdvisoryDate": "1437696000",
-            "AdvisoryURL": "https://vel.joomla.org/live-vel/1714-simpleimageupload-1-2-other",
-            "SoftwareType": "Joomla Component",
-            "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
-            "DetectByPathExists": true,
-            "Path": "plugins/editors-xtd/simpleimageuploadbutton/simpleimageuploadbutton.xml"
-        },
-        {
-            "Title": "High Priority - Component Contus HD Video Share (aka HDVideoShare) by Apptha - Directory Traversal",
+            "Title": "High Priority - Component Contus HD Video Share (aka HDVideoShare) by Apptha v3.5.0 - Directory Traversal",
             "SoftwareName": "Contus HD Video Share",
             "CVE": "No CVE",
             "AdvisoryDate": "1435190400",
@@ -797,6 +761,18 @@
             "VersionTo": "3.5.0",
             "DetectByPathExists": false,
             "Path": "administrator/components/com_contushdvideoshare/com_contushdvideoshare.xml"
+        },
+        {
+            "Title": "High Priority - Plugin SimpleImageUpload by Tuts4You - Other",
+            "SoftwareName": "SimpleImageUpload",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1437696000",
+            "AdvisoryURL": "https://vel.joomla.org/live-vel/1714-simpleimageupload-1-2-other",
+            "SoftwareType": "Joomla Component",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "0.0.0",
+            "DetectByPathExists": true,
+            "Path": "plugins/editors-xtd/simpleimageuploadbutton/simpleimageuploadbutton.xml"
         },
         {
             "Title": "High Priority - Module UMI 3D Tag Cloud 1.3.4 - XSS",
@@ -818,13 +794,13 @@
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1699-escope-prettyphoto-mod-escope-pp-1-0-3-xss-cross-site-scripting",
             "SoftwareType": "Joomla Component",
             "VersionFrom": "0.0.0",
-            "VersionTo": "99.0.0",
+            "VersionTo": "0.0.0",
             "DetectByPathExists": true,
             "Path": "modules/mod_escope_pp"
         },
         {
             "Title": "High Priority - Component XCloner Backup and Restore 3.5.2 - Multiple Vulnerabilities",
-            "SoftwareName": "Escope PrettyPhoto",
+            "SoftwareName": "XCloner Backup and Restore",
             "CVE": "No CVE",
             "AdvisoryDate": "1435190400",
             "AdvisoryURL": "https://vel.joomla.org/live-vel/1670-xcloner-backup-and-restore-com-cloner-3-5-2",
@@ -847,7 +823,7 @@
             "Path": "administrator/components/com_eqfullevent/eqfullevent.xml"
         },
         {
-            "Title": "High Priority - Component Football  - SQL Injection",
+            "Title": "High Priority - Component Football - SQL Injection",
             "SoftwareName": "Football",
             "CVE": "No CVE",
             "AdvisoryDate": "1433203200",
@@ -859,7 +835,7 @@
             "Path": "administrator/components/com_football/football.xml"
         },
         {
-            "Title": "High Priority - Component FaceGallery  - Other",
+            "Title": "High Priority - Component FaceGallery v1.0.0 - Other",
             "SoftwareName": "FaceGallery",
             "CVE": "No CVE",
             "AdvisoryDate": "1428883200",
@@ -871,7 +847,7 @@
             "Path": "administrator/components/com_facegallery/facegallery.xml"
         },
         {
-            "Title": "High Priority - Component Simple Photo Gallery  - Other",
+            "Title": "High Priority - Component Simple Photo Gallery v1.1.0 - Other",
             "SoftwareName": "Simple Photo Gallery",
             "CVE": "No CVE",
             "AdvisoryDate": "1428883200",
@@ -883,19 +859,7 @@
             "Path": "administrator/components/com_simplephotogallery/simplephotogallery.xml"
         },
         {
-            "Title": "High Priority - Plugin youtubeplugin 1.1 - Other",
-            "SoftwareName": "youtubeplugin",
-            "CVE": "No CVE",
-            "AdvisoryDate": "1427414400",
-            "AdvisoryURL": "https://vel.joomla.org/live-vel/1660-youtube-plugin-youtubejoomla-1-1",
-            "SoftwareType": "Joomla Component",
-            "VersionFrom": "0.0.0",
-            "VersionTo": "1.1.0",
-            "DetectByPathExists": false,
-            "Path": "plugins/content/youtubeplugin/youtubeplugin.xml"
-        },
-        {
-            "Title": "High Priority - Component AceShop - SQL Injection",
+            "Title": "High Priority - Component AceShop v4.1.3 - SQL Injection",
             "SoftwareName": "AceShop",
             "CVE": "No CVE",
             "AdvisoryDate": "1415750400",
@@ -907,7 +871,19 @@
             "Path": "administrator/components/com_aceshop/aceshop.xml"
         },
         {
-            "Title": "High Priority - Component Mac Gallery 1.5 - Remote File Injection",
+            "Title": "High Priority - Plugin youtubeplugin 1.1.0 - Other",
+            "SoftwareName": "youtubeplugin",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1427414400",
+            "AdvisoryURL": "https://vel.joomla.org/live-vel/1660-youtube-plugin-youtubejoomla-1-1",
+            "SoftwareType": "Joomla Component",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.1.0",
+            "DetectByPathExists": false,
+            "Path": "plugins/content/youtubeplugin/youtubeplugin.xml"
+        },
+        {
+            "Title": "High Priority - Component Mac Gallery 1.5.0 - Remote File Injection",
             "SoftwareName": "Mac Gallery",
             "CVE": "No CVE",
             "AdvisoryDate": "1411344000",
@@ -917,6 +893,18 @@
             "VersionTo": "1.5.0",
             "DetectByPathExists": false,
             "Path": "administrator/components/com_macgallery/macgallery.xml"
+        },
+        {
+            "Title": "High Priority - Component Tag 1.7.6 - SQL Injection",
+            "SoftwareName": "Tag",
+            "CVE": "No CVE",
+            "AdvisoryDate": "1411344000",
+            "AdvisoryURL": "https://www.vulnerability-lab.com/get_content.php?id=2061",
+            "SoftwareType": "Joomla Component",
+            "VersionFrom": "0.0.0",
+            "VersionTo": "1.7.6",
+            "DetectByPathExists": false,
+            "Path": "administrator/components/com_tag/manifest.xml"
         }
     ]
 }

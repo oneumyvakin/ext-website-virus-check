@@ -1,7 +1,7 @@
 {
-    "DbName": "Drupal 8 Plugins",
+    "DbName": "Drupal 8, Drupal 8 Plugins and third-party libraries",
     "DbVersion": 1,
     "Parts": [
-        "dbDrupal7Plugins.json"
+        "2017.json"
     ]
 }
