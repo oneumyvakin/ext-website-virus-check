@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+    <name>COM_CATALOG</name>
+    <author>Huge-IT</author>
+    <creationDate>January 2015</creationDate>
+    <copyright>Copyright (C) 2013 Huge-IT.com 2013. All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>info@huge-it.com</authorEmail>
+    <authorUrl>http://www.huge-it.com</authorUrl>
+    <version>1.0.7</version>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>controller.php</filename>
+        <filename>catalog.php</filename>
+        <filename>ajax_url.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>helpers</folder>
+    </files>
+
+    <media destination="com_catalog" folder="media">
+        <folder>elements</folder>
+        <folder>Front_images</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+        <folder>style</folder>
+        <filename>index.html</filename>
+    </media>
+    <administration>
+        <menu label  = "Catalog" >COM_CATALOG</menu>
+        <submenu>
+            <menu link="option=com_catalog&amp;view=catalogs">COM_CATALOG</menu>
+            <menu link="option=com_catalog&amp;view=general">COM_GENERAL</menu>
+            <menu link="option=com_catalog&amp;view=submissions">COM_SUBMISSIONS</menu>
+            <menu link="option=com_catalog&amp;view=comment">COM_COMMENT</menu>
+            <menu link="option=com_catalog&amp;view=rating">COM_RATINGSMANAGER</menu>
+            <menu link="option=com_catalog&amp;view=catalogoptions">COM_CATALOGOPTIONS</menu>
+            <menu link="option=com_catalog&amp;view=productsoptions">COM_PRODUCTSOPTONS</menu>
+            <menu link="option=com_catalog&amp;view=imageviewoptions">COM_IMAGEVIEWOPTIONS</menu>
+            <menu link="option=com_catalog&amp;view=featured">COM_FEATURED</menu>
+        </submenu>
+
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>controller.php</filename>
+            <filename>catalog.php</filename>
+            <filename>commentajax.php</filename>
+            <filename>deleteRatCatalog.php</filename>
+            <filename>submissionAjax.php</filename>
+            <filename>updateRatCatalog.php</filename>
+            <folder>controllers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_catalog.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_catalog.sys.ini</language>
+        </languages>
+
+
+    </administration>
+</extension>
