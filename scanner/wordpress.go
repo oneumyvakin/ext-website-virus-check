@@ -24,10 +24,6 @@ type wordpress struct {
 	log         *log.Logger
 }
 
-type wordpressPlugin struct {
-	Version string
-}
-
 func (wp *wordpress) getDbPath() string {
 	return wp.dbPath
 }
@@ -138,8 +134,8 @@ func (wp *wordpress) checkVulnerability(wg *sync.WaitGroup, v Vulnerability) {
 		wp.found = append(wp.found, v)
 		return
 	}
-	wpPlugin := wordpressPlugin{}
-	wpPlugin.Version, err = searchVersion(f)
+
+	sanitizedVersion, err := searchVersion(f)
 	f.Close()
 	if err != nil {
 		v.Error.IsError = true
@@ -149,15 +145,7 @@ func (wp *wordpress) checkVulnerability(wg *sync.WaitGroup, v Vulnerability) {
 		return
 	}
 
-	sanitizedVersion, err := sanitizeVersion(wpPlugin.Version)
-	if err != nil {
-		v.Error.IsError = true
-		v.Error.LocaleKey = "scannerErrorPluginVersionSearh"
-		v.Error.LocaleArgs = map[string]string{"msg": err.Error()}
-		wp.found = append(wp.found, v)
-		return
-	}
-	pluginVersion, err := version.NewVersion(sanitizedVersion)
+	softwareVersion, err := version.NewVersion(sanitizedVersion)
 	if err != nil {
 		v.Error.IsError = true
 		v.Error.LocaleKey = "scannerErrorPluginVersionParseError"
@@ -166,7 +154,7 @@ func (wp *wordpress) checkVulnerability(wg *sync.WaitGroup, v Vulnerability) {
 		return
 	}
 
-	if (pluginVersion.GreaterThan(vulnVersionFrom) || pluginVersion.Equal(vulnVersionFrom)) && (pluginVersion.LessThan(vulnVersionTo) || pluginVersion.Equal(vulnVersionTo)) {
+	if (softwareVersion.GreaterThan(vulnVersionFrom) || softwareVersion.Equal(vulnVersionFrom)) && (softwareVersion.LessThan(vulnVersionTo) || softwareVersion.Equal(vulnVersionTo)) {
 		v.SoftwareVersion = sanitizedVersion
 		wp.found = append(wp.found, v)
 	}
